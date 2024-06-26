@@ -9,4 +9,4 @@ This is the sample Unreal Engine project to verify and demonstrate usage of Live
 - Microsoft Visual Studio 2022
 
 ## Quick Start
-Download and install [latest plugin release](add link)
+Download and install [latest plugin release](https://liveawarenexus.sfo3.cdn.digitaloceanspaces.com/LiveAwareSDK/Unreal/LiveAwareUnrealPlugin.zip)
