@@ -1,4 +1,4 @@
-# Unreal Engin Example Project for Live Aware Labs Recorder Plugin
+# Unreal Engine Example Project for Live Aware Labs Recorder Plugin
 
 This is the sample Unreal Engine project to verify and demonstrate usage of LiveAwareRecorder plugin.
 > **_NOTE:_**  This repo uses LFS, don't download it as a zip file from github.
