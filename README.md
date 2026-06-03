@@ -10,10 +10,10 @@ Use these examples to confirm the plugin loads, explore the included Blueprint w
 
 | Folder | Unreal Engine version | Recommendation |
 | --- | --- | --- |
-| `RecorderPluginExampl_UE5.7` | Unreal Engine 5.7 | Recommended for new testing |
-| `RecorderPluginExampl` | Unreal Engine 5.0.3+ | Legacy example |
+| `RecorderPluginExampl_UE5.7` | Unreal Engine 5.7 | Currently validated and recommended |
+| `RecorderPluginExampl` | Unreal Engine 5.0.3+ | Legacy example, not currently validated |
 
-Use the folder that matches your installed Unreal Engine version. If you are starting fresh, use `RecorderPluginExampl_UE5.7`.
+Use `RecorderPluginExampl_UE5.7` for new testing. The older `RecorderPluginExampl` folder is retained for legacy Unreal Engine projects, but it has not been validated with the current plugin release.
 
 ## Requirements
 
