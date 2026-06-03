@@ -1,35 +1,63 @@
-# Unreal Engine Example Project for Live Aware Labs Recorder Plugin
+# Live Aware Recorder Unreal Engine Example
 
-This repo contains sample Unreal Engine projects to verify and demonstrate usage of the LiveAwareRecorder plugin.
+This repository contains Unreal Engine sample projects for testing the LiveAwareRecorder plugin.
 
-> **NOTE:** This repo uses Git LFS. Do not download it as a zip file from GitHub.
+Use these examples to confirm the plugin loads, explore the included Blueprint widgets, and verify basic recorder integration in an Unreal project.
 
-## Example Projects
+> **Important:** This repository uses Git LFS for Unreal assets. Clone it with Git instead of downloading the GitHub source zip.
 
-| Folder | Unreal Engine version | Status |
+## Choose An Example
+
+| Folder | Unreal Engine version | Recommendation |
 | --- | --- | --- |
-| `RecorderPluginExampl_UE5.7` | Unreal Engine 5.7 | Current validated example |
+| `RecorderPluginExampl_UE5.7` | Unreal Engine 5.7 | Recommended for new testing |
 | `RecorderPluginExampl` | Unreal Engine 5.0.3+ | Legacy example |
 
-Use the example folder that matches your Unreal Engine version. The UE 5.7 example is the recommended starting point for current testing.
+Use the folder that matches your installed Unreal Engine version. If you are starting fresh, use `RecorderPluginExampl_UE5.7`.
 
-## Prerequisites
+## Requirements
 
-- Windows 10+
-- Unreal Engine matching the selected example folder
-- Microsoft Visual Studio with C++ game development tools
+- Windows 10 or newer
+- Unreal Engine matching the selected example
+- Visual Studio with C++ game development tools
 - Windows SDK
 - .NET Framework 4.8 Developer Pack / SDK
-- Enough free disk space for Unreal build artifacts; 20 GB or more is recommended
+- At least 20 GB of free disk space for Unreal-generated build files
 
-## Plugin Setup
+## Quick Start
 
-Download and install the [latest plugin release](https://liveawarenexus.sfo3.cdn.digitaloceanspaces.com/LiveAwareSDK/Unreal/LiveAwareUnrealPlugin.zip).
+1. Clone this repository with Git LFS enabled.
+2. Download the latest LiveAwareRecorder Unreal plugin:
+   https://liveawarenexus.sfo3.cdn.digitaloceanspaces.com/LiveAwareSDK/Unreal/LiveAwareUnrealPlugin.zip
+3. Extract the plugin into the selected example project so the folder exists at:
+   `Plugins/LiveAwareRecorder`
+4. Right-click the selected `.uproject` file and choose **Generate Visual Studio project files**.
+5. Open the `.uproject` in Unreal Engine.
+6. When prompted, allow Unreal to rebuild project modules.
 
-For source checkouts, copy the plugin into the selected example project's `Plugins/LiveAwareRecorder` folder before generating project files or opening the `.uproject`.
+For UE 5.7, open:
 
-Customer release archives may already include the plugin staged in `Plugins/LiveAwareRecorder`.
+```text
+RecorderPluginExampl_UE5.7/RecorderPluginExampl.uproject
+```
+
+## Building Manually
+
+If Unreal cannot rebuild modules automatically, build from a Developer PowerShell or terminal:
+
+```powershell
+& 'C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\Build.bat' RecorderPluginExamplEditor Win64 Development -Project="<repo>\RecorderPluginExampl_UE5.7\RecorderPluginExampl.uproject" -WaitMutex -NoHotReload
+```
+
+Replace `<repo>` with the path to this repository.
+
+## Troubleshooting
+
+- If Unreal reports missing plugin files, confirm the plugin is extracted to `Plugins/LiveAwareRecorder` inside the selected example folder.
+- If the editor build fails with a .NET Framework SDK error, install the .NET Framework 4.8 Developer Pack / SDK.
+- If the build fails while Live Coding is active, close Unreal Editor and the Live Coding console, then build again.
+- If compilation fails with disk-space errors, free additional space and delete generated `Intermediate` and `Binaries` folders before retrying.
 
 ## Generated Files
 
-Do not commit generated Unreal or Visual Studio output such as `Binaries`, `Intermediate`, `.vs`, `Saved`, packaged builds, or generated solution files.
+Unreal and Visual Studio generate large local build files. Do not commit or share generated folders such as `Binaries`, `Intermediate`, `.vs`, `Saved`, packaged builds, or generated solution files.
