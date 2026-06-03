@@ -19,16 +19,13 @@ Use the folder that matches your installed Unreal Engine version. If you are sta
 
 - Windows 10 or newer
 - Unreal Engine matching the selected example
-- Visual Studio with C++ game development tools
-- Windows SDK
-- .NET Framework 4.8 Developer Pack / SDK
-- At least 20 GB of free disk space for Unreal-generated build files
+- Visual Studio 2022 or newer with C++ game development tools
+- .NET Framework 4.8 Developer Pack / SDK for Unreal editor builds
 
 ## Quick Start
 
 1. Clone this repository with Git LFS enabled.
-2. Download the latest LiveAwareRecorder Unreal plugin:
-   https://liveawarenexus.sfo3.cdn.digitaloceanspaces.com/LiveAwareSDK/Unreal/LiveAwareUnrealPlugin.zip
+2. Download the [latest plugin release](https://liveawarenexus.sfo3.cdn.digitaloceanspaces.com/LiveAwareSDK/Unreal/LiveAwareUnrealPlugin.zip).
 3. Extract the plugin into the selected example project so the folder exists at:
    `Plugins/LiveAwareRecorder`
 4. Right-click the selected `.uproject` file and choose **Generate Visual Studio project files**.
