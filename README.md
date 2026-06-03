@@ -28,13 +28,3 @@ Open:
 ```text
 RecorderPluginExampl_UE5.7/RecorderPluginExampl.uproject
 ```
-
-## Building Manually
-
-If Unreal cannot rebuild modules automatically, build from a Developer PowerShell or terminal:
-
-```powershell
-& 'C:\Program Files\Epic Games\UE_5.7\Engine\Build\BatchFiles\Build.bat' RecorderPluginExamplEditor Win64 Development -Project="<repo>\RecorderPluginExampl_UE5.7\RecorderPluginExampl.uproject" -WaitMutex -NoHotReload
-```
-
-Replace `<repo>` with the path to this repository.
