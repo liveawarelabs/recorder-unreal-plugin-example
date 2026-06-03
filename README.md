@@ -50,14 +50,3 @@ If Unreal cannot rebuild modules automatically, build from a Developer PowerShel
 ```
 
 Replace `<repo>` with the path to this repository.
-
-## Troubleshooting
-
-- If Unreal reports missing plugin files, confirm the plugin is extracted to `Plugins/LiveAwareRecorder` inside the selected example folder.
-- If the editor build fails with a .NET Framework SDK error, install the .NET Framework 4.8 Developer Pack / SDK.
-- If the build fails while Live Coding is active, close Unreal Editor and the Live Coding console, then build again.
-- If compilation fails with disk-space errors, free additional space and delete generated `Intermediate` and `Binaries` folders before retrying.
-
-## Generated Files
-
-Unreal and Visual Studio generate large local build files. Do not commit or share generated folders such as `Binaries`, `Intermediate`, `.vs`, `Saved`, packaged builds, or generated solution files.
